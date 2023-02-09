@@ -1,0 +1,16 @@
+{{>header}}
+<div class="container">
+    {{>nav}}
+    <div class="jumbotron">
+        <h1 class="display-4">Il y a eu une erreur 🙃</h1>
+        <p class="lead">Désolé, il y a eu un problème avec votre demande</p>
+        {{#message}}
+        <div class="alert alert-danger" role="alert">{{.}}</div>
+        {{/message}}
+        <hr class="my-4">
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Retour à la page d'accueil</a>
+        </p>
+    </div>
+</div>
+{{>footer}}
